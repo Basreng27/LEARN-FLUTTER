@@ -1,0 +1,9 @@
+// install flutter
+Buka vs code -> view -> command pallete -> create new project flutter -> apllication
+
+// run app
+F5 -> pilih android emulator
+
+// shortcut
+stl(enter(stateless widget)) => membuat class
+stf(enter(statefull widget)) => membuat class
