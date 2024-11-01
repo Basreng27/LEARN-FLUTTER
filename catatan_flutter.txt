@@ -1,9 +1,42 @@
 // install flutter
 Buka vs code -> view -> command pallete -> create new project flutter -> apllication
 
+//cmd
+//firebase
+flutterfire (untuk cek apakah terinstall firebase)
+firebase --version (cek versi)
+firebase init (iniliasisasi)(bisa di skip)
+firebase login (login akun firebase)
+flutterfire configure (config firebase)
+//flutter
+flutter pub add firebase_auth / flutter pub add firebase_core (menambahkan auth di .yaml)
+//Cloud Firestore 
+flutter pub add cloud_firestore (menambahkan library)
+
 // run app
 F5 -> pilih android emulator
 
 // shortcut
 stl(enter(stateless widget)) => membuat class
 stf(enter(statefull widget)) => membuat class
+
+// yang tidak di pelajari (Saya kira kurang penting)
+1. TextStyle : https://www.youtube.com/watch?v=qjcjrNqxcQc&list=PLZQbl9Jhl-VACm40h5t6QMDB92WlopQmV&index=12
+2. AnimatedContainer & GestureDetector : https://www.youtube.com/watch?v=CV-l0CMiX0I&list=PLZQbl9Jhl-VACm40h5t6QMDB92WlopQmV&index=14
+
+
+// urutan
+1. first_app
+2. statefull_widget
+3. anonymous_method
+4. list_view
+5. flexible_widget
+6. Stack & Align Widget
+
+// Code
+child: Image(image: NetworkIamge("Link Gambar")) // image widget {fit: BoxFit...} // untuk penyesuaian gambar {repeat: ImageRepeat...} // untuk repeat gambar
+	untuk menambahkan gambar di dalam folder asset maka buat folder asset dan buka commennnya di file pubspec.yaml dan ubah menjadi AssetImages//link gambar
+spacer(flex: 1)// untuk memberi jarak berbeda yang sama seperti beetwen
+sizedBox(hwight:1, weight:1) // memberi widget ukuran
+dragable<tipedata>(data:variable, childWhenDragging:{kalau di drag akan melakukan apa}, feedback:(sama aja tapi saat di drag))// untuk bisa drag
+dragtarget<tipedata>(onwillaccept:(value)=>true//untuk true terus, onaccept: (value){isaccepted = true}, builder:(contect, candidate, rejected){return(isAccepted)?...isinya... : ...kalau false...//ini if}) // untuk menampung dragnya dan jangan lupa buat variable isaccepted untuk menampung apkah sudah ada atau belum
